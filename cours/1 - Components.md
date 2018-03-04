@@ -19,7 +19,12 @@ Un component est une annotation qui se fera avec un "@", par exemple :
 <dl>
   <dt>selector</dt>
   <dd>Le selector en l'occurance dans notre exemple app-bootstrap-training est la balise que l'on mettera dans le fichier de démarrage qui est app.component.html</dd>
-  
+
+  <dt>templateUrl</dt>
+  <dd>Le fichier HTML associé à notre component</dd>
+
+  <dt>styleUrls</dt>
+  <dd>Le fichier HTML associé à notre component</dd>
 </dl>
 
 
