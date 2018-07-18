@@ -1,4 +1,4 @@
-#Creation de formulaire avec action : 
+# Creation de formulaire avec action : 
 
 1. Objectif du tuto :
 
@@ -112,6 +112,9 @@ TestClick(){
     }
   }
 ```
+Essayer et bidouiller et vous verrez :) 
+
+Vous n'avez plus que à lancer votre application normalement vous savez comment faire.
 
 
 
