@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SamplesService } from "../../services/samples.service";
 
 @Component({
   selector: 'app-bootstrap-training',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BootstrapTrainingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sample:SamplesService) { 
+    sample.Message("COUCOU à vous");
+  }
 
   ngOnInit() {
   }

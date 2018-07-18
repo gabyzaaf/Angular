@@ -8,6 +8,7 @@ import { ErrorComponent } from './error/error/error.component';
 
 import { AlbumGardsService } from './service/album-gards.service';
 import { AlbumModule } from './module/album.module';
+import { SamplesService } from "./services/samples.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { AlbumModule } from './module/album.module';
     ]),
     AlbumModule
   ],
-  providers: [],
+  providers: [SamplesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
