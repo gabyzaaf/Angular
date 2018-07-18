@@ -55,11 +55,11 @@ Vous devriez voir aparaitre Vous dites Bonjour
 
 6. Explication : 
 
-La notion qui est utilisé est une notre de variable et binding, je m'explique : 
+La notion qui est utilisé est la notre de variable et de binding, je m'explique : 
  Dans la class  AppComponent il existe une variable qui se nomme title et qui possède la valeur Bonjour.
  A partir de cela le fichier app.component.ts est lié aux fichiers app.component.html et app.component.css comme on a pu le voir dans le précedent tuto.
 
- Et il existe la notion de binding, le mot binding qui peut etre traduit en francais par le mot liaison permet de créer une relation entre le fichier app.component.ts et le fichier app.component.html en métant les accolades comme ceci dans le fichier HTML :
+ Et il existe la notion de binding, le mot binding qui peut etre traduit en francais par le mot liaison permet de créer une liaison entre le fichier app.component.ts et le fichier app.component.html en métant les accolades comme ceci dans le fichier HTML :
 
  ```javascript
 {{nom de la variable}}

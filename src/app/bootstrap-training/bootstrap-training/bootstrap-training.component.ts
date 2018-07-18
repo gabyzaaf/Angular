@@ -11,5 +11,7 @@ export class BootstrapTrainingComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  SayHello(){
+    console.log("HELLOOOOOO");
+  }
 }
