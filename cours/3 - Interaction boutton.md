@@ -30,3 +30,11 @@ Explication :
 
 Nous avons crée une méthode SayHello qui écrira dans la console Hello a tous.
 [Pour pouvoir afficher les différentes consoles celon vos navigateurs](https://www.alsacreations.com/astuce/lire/1436-console-javascript.html)
+
+4. Lancement de l'application : 
+
+Pour lancer votre application veuillez lancer cette commande 
+
+```javascript
+ng serve
+```
