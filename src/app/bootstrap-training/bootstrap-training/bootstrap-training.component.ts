@@ -10,9 +10,11 @@ export class BootstrapTrainingComponent implements OnInit {
 
   constructor(private sample:SamplesService) { 
     sample.Message("COUCOU à vous");
+    
   }
 
   ngOnInit() {
+    this.sample.getObservable().subscribe(element => console.log(element));
   }
   SayHello(){
     console.log("HELLOOOOOO");

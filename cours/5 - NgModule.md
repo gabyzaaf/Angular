@@ -35,4 +35,4 @@ La premiere chose qui différes se sont la portée je m'explique. Une porté est
 
 -> Import : permet de specifier dans le component ce qui peut etre utilisé et importer d'autre module qui ont étés crée par exemple AlbumModule comme vous pouvez voir dans l'exemple.
 
--> bootstrap : permet de spécifier la class qui va étre executer au démarage on pourrait le considérer le point d'entrée de l'application.
+-> bootstrap : permet de spécifier la class qui va étre executer au démarage on pourrait le considérer ça comme le point d'entrée de l'application.

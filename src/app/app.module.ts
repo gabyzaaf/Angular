@@ -10,6 +10,9 @@ import { AlbumGardsService } from './service/album-gards.service';
 import { AlbumModule } from './module/album.module';
 import { SamplesService } from "./services/samples.service";
 
+
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +23,8 @@ import { SamplesService } from "./services/samples.service";
       {path:'',redirectTo:'products',pathMatch:'full'},
       {path:'**',redirectTo:'error',pathMatch:'full'},
     ]),
-    AlbumModule
+    AlbumModule,
+    HttpClientModule
   ],
   providers: [SamplesService],
   bootstrap: [AppComponent]

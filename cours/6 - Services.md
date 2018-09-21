@@ -9,7 +9,7 @@ Ce tuto a pour objectif de comprendre l'utilité des services avec angular.
 
 Un service est avant tout une notion de résponsabilité je m'explique :  
 
-Un component doit servire uniquement à afficher de la données à l'utilisateur. Si vous souhaitez faire de la verification ou crée des règles specifique (ce que l'on appel dans le jargon des règles métiers) il faut le deléguer au service c'est sa tache.
+Un component doit servire uniquement à afficher de la données à l'utilisateur. Si vous souhaitez faire de la verification ou créer des règles specifique (ce que l'on appel dans le jargon des règles métiers) il faut le deléguer au service c'est sa tache.
 
 3. Pourquoi faire un service ?
 
@@ -23,7 +23,7 @@ Vous devez taper cette commande dans votre terminal :
 ng g s services/samples
 ```
 
-Explication : 
+Explication de la commande : 
 
 ng = commande de angular-cli.
 g = generate
@@ -45,7 +45,7 @@ export class SamplesService {
 
 Explication : 
 
-L'annotation @Injectable permet de pouvoir faire ce que l'on appel de l'injection de dépendance, ne fuyé pas j'explique : 
+L'annotation @Injectable permet de pouvoir faire ce que l'on appel de l'injection de dépendance, ne fuyez pas je m'explique : 
 
 Cela signifie que c'est le moteur de angular qui va lui meme gérer sa création (son instanciation) et tout cela grace à cette annotation.
 
@@ -93,11 +93,13 @@ export class BootstrapTrainingComponent implements OnInit {
 }
 ```
 
-Vous voyez dans le constructeur j'ai simplement mis sample:SampleService et le moteur d'angular a crée l'objet.
+Vous voyez dans le constructeur (constructor plus haut) j'ai simplement mis sample:SampleService et le moteur d'angular a crée l'objet.
 Si vous lancer votre application maintenant vous devriez avoir une erreur !
 
-Pourquoi cette erreur ? C'est par ce que comme nous l'avons vu dans le tuto sur NgModule il existe une rubrique providers et il faut le déclarer dedans comme ceci : 
+Pourquoi cette erreur ? C'est par ce que comme nous l'avons vu dans le tuto sur NgModule il existe une rubrique qui se nomme providers et il faut le déclarer dedans comme ceci : 
 
 ```javascript
-providers: [SamplesService]
+providers: [SamplesService],
 ```
+
+Et si vous relancez votre application tout devrait marcher.
